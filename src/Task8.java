@@ -6,8 +6,8 @@ public class Task8 {
         int minute = number;
 
 
-        hour = number / MINUTES_IN_HOUR; //convert minutes into hours
-        minute -= hour * MINUTES_IN_HOUR; //remaining minutes
+        hour = number / MINUTES_IN_HOUR;
+        minute -= hour * MINUTES_IN_HOUR;
 
         String hour_noun = hour > 1? "Hours":"Hour";
         String minute_noun = minute > 1?"Minutes": "Minute";

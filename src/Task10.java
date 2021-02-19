@@ -2,19 +2,24 @@ import java.util.ArrayList;
 
 public class Task10 {
 
-    public void commonChars(String word1, String  word2){
-        ArrayList<Character> commonChars = new ArrayList<>();
+    public static void main(String[] args){
+        commonChars("house", "Computers");
+    }
 
-        char[] word1Array = word1.toCharArray();
-        char[] word2Array = word2.toCharArray();
+    public static void commonChars(String word1, String  word2){
+       String commonChars = "";
+
+        char[] word1Array = word1.toLowerCase().toCharArray();
+        char[] word2Array = word2.toLowerCase().toCharArray();
 
         for(int i = 0; i < word2Array.length; i++){
             for(int j = 0; j < word1Array.length; j++){
                 if(word2Array[i] == word1Array[j]){
-                    commonChars.add(word2Array[i]);
+                    commonChars += word2Array[i];
+                   commonChars += i == word2Array.length - 1? "":", ";
                 }
             }
         }
-        System.out.println(commonChars);
+        System.out.print("Common letters: "+commonChars );
     }
 }
