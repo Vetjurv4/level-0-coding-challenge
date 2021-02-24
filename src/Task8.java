@@ -9,8 +9,8 @@ public class Task8 {
         hour = number / MINUTES_IN_HOUR;
         minute -= hour * MINUTES_IN_HOUR;
 
-        String hour_noun = hour > 1? "Hours":"Hour";
-        String minute_noun = minute > 1?"Minutes": "Minute";
+        String hour_noun = hour != 1? "Hours":"Hour";
+        String minute_noun = minute != 1?"Minutes": "Minute";
 
         return hour+" "+hour_noun+", "+minute+" "+minute_noun;
     }

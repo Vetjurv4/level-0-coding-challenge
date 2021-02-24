@@ -8,6 +8,6 @@ public class Task2 {
 			int a = 1 + 1 * 2 / 2; 
 			int b = (1 + 1 * 2) / 2;
 			
-			System.out.println(" x="+x+" y="+y+" z="+z+" a="+a+" x="+b);
+			System.out.println(" x="+x+" y="+y+" z="+z+" a="+a+" b="+b);
 	}
 }
