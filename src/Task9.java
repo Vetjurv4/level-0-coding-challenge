@@ -1,6 +1,6 @@
 public class Task9 {
 
-    public static String isVowel(String word){
+    public static void isVowel(String word){
         String vowels = "";
         for(int i = 0; i < word.length(); i++){
             //check compare each charecter if it is a vowel
@@ -11,6 +11,6 @@ public class Task9 {
                 vowels += word.charAt(i);
             }
         }
-        return vowels;
+         System.out.println(vowels);
     }
 }
